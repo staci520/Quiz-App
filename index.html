@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Quiz App Wireframe">
+    <title>Quiz App Wireframe</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Page Starts Here -->
+    <header>
+      <h1>BELIEFS INVENTORY QUIZ</h1>
+    </header>
+
+    <section class="start-section">
+      <h3><i>"Man is not disturbed by events, but by the view he takes of them" ~Epictetus</i></h3><br>
+      <p>This quiz is designed to uncover particular irrational ideas which contribute to unhappiness and stress.</p><br>
+      <button type="button" class="start-button" id="startQuizButton">Start</button>
+    </section>
+      
+    <!-- Quiz Section -->
+    <form class="quiz-section">
+      <div class="question-number" id="questionNumberDisplay">Question X of 5</div><br>
+      <h3 class="text" id="question">Sample question text</h3><br> 
+      <fieldset>
+        <div class="optionText">
+          <input class="optionRadio" type="radio" name="response" id="option1" value="3" tabindex="1">  Strongly agree
+        </div>
+        <div class="optionText">
+          <input class="optionRadio" type="radio" name="response" id="option2" value="2" tabindex="2">  Agree
+        </div>
+        <div class="optionText">
+          <input class="optionRadio" type="radio" name="response" id="option3" value="1" tabindex="3">  Somewhat disagree
+        </div>
+        <div class="optionText">
+          <input class="optionRadio" type="radio" name="response" id="option4" value="0" tabindex="4">  Disagree
+        </div>
+      </fieldset>
+      <br>
+      <p><button tabindex="5" class="submit-button" id="submitButton">Submit</button></p>
+      <p><button tabindex="5" class="next-button" id="nextButton">Next >></button></p>
+    </form>
+
+    <!-- Result section -->
+    <section class="result-section">
+      <h4 class="text" id="scoreTotalText"> Score </h4></br>
+      <h4 class="text" id="resultText"> Question Result </h4>
+    </section>
+
+    <!-- Final section -->
+    <section class="final-section">
+      <h3 class="text"> Final Assessment </h2><br>
+      <p class="finalMessage" id="final">"At the root of all irrational thinking is the assumption that things are done to you. Nothing is done to you. Events happen in the world. You experience those activity events (A), engage in self-talk (B), and consequently experience an emotion (C) resulting from the self-talk. A does not cause C; B causes C.  If your self-talk is irrational and unrealistic, you create unpleasant emotions. Please consider exploring resources to help you to refute irrational ideas." </p><br>
+      <button class="restart-button" id="restartQuiz">Restart</button>
+    </section>
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="store.js"></script>
+    <script src="index.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("beliefs.jpg"); 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+h1  {
+    margin: 35px;
+    color: #FCF9EA; 
+    text-align: center;
+}
+
+.start-button, .submit-button, .next-button, .restart-button{
+    background-color: #ff9900;
+    text-align: center;
+    float: center;
+    border-color: black;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 100px;
+    color: #000000
+}
+
+.start-button:hover, .submit-button:hover, .restart-button:hover {
+    background-color: rgb(119, 177, 189); 
+    border-style: none;
+}
+
+.next-button:hover {
+    background-color: rgb(119, 177, 189);
+}
+
+.start-section {
+    display: block;
+    text-align: center;
+    background-color: #FCF9EA;
+    opacity: .9;
+    border-radius: 10px; 
+    margin: 15px; 
+    padding: 15px;
+}
+
+
+  .quiz-section, 
+  .result-section, 
+  .final-section {
+    display: none;
+    text-align: center;
+    background-color: #FCF9EA;
+    opacity: .9;
+    border-radius: 10px; 
+    margin: 15px; 
+    padding: 15px;
+}
+
+fieldset {
+    text-align: left; 
+    margin-top: 15px;
+    margin-left: 75px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: none;
+    font-weight: 520;
+    
+}
+
+.optionText {
+  padding: 3px;
+}
+
+.optionRadio {
+  margin-right: 5px;
+}
